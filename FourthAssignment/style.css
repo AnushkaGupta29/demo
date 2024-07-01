@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(246, 246, 246);
+}
+.MainDiv
+{
+    width: 1300px; 
+    display: flex;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+.Movies{
+    width: 400px;
+    border: 1px solid rgb(230, 229, 229);
+    background-color: white;
+    margin-inline: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+img{
+    width: 400px;
+}
+button{
+    padding: 5px 15px;
+    background-color: #81d4fa;
+    border: none;
+    display: block;
+    margin-inline: auto;
+}
