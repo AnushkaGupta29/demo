@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area 3</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: minmax(200px, auto);
+            grid-template-areas: 
+            'A B B C'
+            'D D E F'
+            'G H I I';
+            padding: 10px;
+            justify-content: center;
+            margin: 0% 16%;
+            gap: 40px;
+        }
+         #box>div{
+            border: 1px solid;
+            border-radius: 15px; 
+            background-color: teal;
+        }
+       #box>div:nth-child(1){
+           grid-area: A;
+           /* padding: 20px; */
+        }
+        #box>div:nth-child(2){
+           grid-area: B;
+           /* padding: 20px; */
+        }
+        #box>div:nth-child(3){
+           grid-area: C;
+           /* padding: 20px; */
+        }
+        #box>div:nth-child(4){
+           grid-area: D;
+           /* padding: 20px; */
+        }
+        #box>div:nth-child(5){
+            grid-area: E;
+            /* padding: 20px; */
+        }
+        #box>div:nth-child(6){
+            grid-area: F;
+            /* padding: 20px; */
+        }
+        #box>div:nth-child(7){
+            grid-area: G;
+            /* padding: 20px; */
+        }
+        #box>div:nth-child(8){
+            grid-area: H;
+            /* padding: 20px; */
+        }
+        #box>div:nth-child(9){
+            grid-area: I;
+            /* padding: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

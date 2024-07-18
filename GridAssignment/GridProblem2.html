@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid Area</title>
+    <style>
+        #box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding: 40px 12% 80px 12%;
+            margin: auto;
+            justify-content: center;
+            gap: 30px;
+            background-color: rgb(245, 225, 228);
+        }
+
+        #box>div {
+            border: 1px solid white;
+            border-radius: 15px;
+            padding: 20px 0px;
+            background-color: white;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+
+        #box>div{
+            padding: 20px;
+        }
+
+        #box>div>p {
+            color: grey;
+            display: inline-block;
+        }
+
+        #styling {
+            color: rgb(148, 102, 39);
+            font-weight: bold;
+            font-size: 20px;
+            float: right;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div>
+            <h3><span style="font-size: x-large;">Capicano</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Americano</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Espresso</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Macchiato</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Mocha</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Coffee Latte</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Piccolo Latte</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Ristretto</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h3><span style="font-size: x-large;">Affogato</span><span id="styling">$49</span></h3>
+            <p>Usage of the Interner is becoming more common due to rapid advance.</p>
+        </div>
+    </div>
+</body>
+
+</html>

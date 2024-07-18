@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid Area Example2</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: 170px 170px 170px 170px;
+            grid-template-rows: 120px 120px;
+            grid-template-areas: 
+            'A A B E'
+            'C D B E';
+            padding: 50px;
+            justify-content: center;
+            gap: 20px;
+        }
+        #box>div{
+            border: 1px solid;
+            border-radius: 15px;
+            color: white;  
+            padding: 20px 0px;
+            font-size: 40px;
+            text-align: left;
+            background-color: rgb(60, 58, 58);
+        }
+        #box>div:nth-child(1){
+           grid-area: A;
+           padding: 20px;
+        }
+        #box>div:nth-child(2){
+           grid-area: B;
+           padding: 40px;
+        }
+        #box>div:nth-child(3){
+           grid-area: C;
+           padding: 20px;
+        }
+        #box>div:nth-child(4){
+           grid-area: D;
+           padding: 20px;
+        }
+        #box>div:nth-child(5){
+            grid-area: E;
+            padding: 40px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>

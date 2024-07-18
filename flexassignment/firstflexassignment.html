@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>First Flex Assignment</title>
+    <style>
+        #navbar {
+            border: 1px solid teal;
+            display: flex;
+            background-color: teal;
+            flex-wrap: wrap;
+            padding: 5px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #navtest {
+            padding: 5px;
+            margin-left: auto;
+        }
+
+        #navbar>div>B {
+            display: block;
+            padding: 5px 15px;
+            font-size: medium;
+        }
+
+        #navtest>a {
+            color: white;
+            text-decoration: none;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        #decor {
+            text-align: center;
+            color: red;
+            padding: 20px 0px 10px 0px;
+        }
+
+        #box {
+            margin: auto;
+            padding-top: auto;
+            width: 70%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 270px 270px 270px;
+            justify-content: center;
+            grid-gap: 5px;
+        }
+
+        img {
+            border-radius: 10%;
+            padding: 10px;
+            width: 250px;
+            height: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div><B>masai</B></div>
+        <div id="navtest">
+            <a href="">HOME</a>
+            <a href="">GALLERY</a>
+            <a href="">ABOUT</a>
+        </div>
+    </div>
+    <div id="decor">
+        <h3>PHOTO GALLERY</h3>
+    </div>
+    <div id="box">
+        <div>
+            <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="image">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-photo/steam-train-chugs-through-mountain-forest-scene-generative-ai_188544-8072.jpg"
+                alt="image">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS_IxQcvP9KNiTF_72DRP3kbotJknRgYfDQ&s"
+                alt="image">
+        </div>
+        <div>
+            <img src="https://img.freepik.com/free-photo/steam-train-chugs-through-mountain-forest-scene-generative-ai_188544-8072.jpg"
+                alt="image">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS_IxQcvP9KNiTF_72DRP3kbotJknRgYfDQ&s"
+                alt="image">
+        </div>
+        <div>
+            <img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt="image">
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
