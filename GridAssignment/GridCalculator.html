@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>masai Calculator</title>
+    <style>
+        h1 {
+            color: teal;
+            text-align: center;
+            font-size: 50px;
+            padding-bottom: 35px;
+        }
+
+        #box {
+            display: grid;
+            grid-template-columns: repeat(4, 65px);
+            grid-auto-rows: minmax(55px, auto);
+            grid-template-areas:
+                'A A A A'
+                'B C D E'
+                'F G H I'
+                'J K L M'
+                'N O P Q';
+            justify-content: center;
+            padding: 48px 40px;
+            margin: auto;
+            gap: 14px 7px;
+            box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            overflow-x: hidden;
+            width: fit-content;
+        }
+
+        #box>div {
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            font-weight: 900;
+            font-size: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        #box>div:nth-child(1) {
+            grid-area: A;
+        }
+
+        #box>div:nth-child(2) {
+            grid-area: B;
+        }
+
+        #box>div:nth-child(3) {
+            grid-area: C;
+        }
+
+        #box>div:nth-child(4) {
+            grid-area: D;
+        }
+
+        #box>div:nth-child(5) {
+            grid-area: E;
+            color: white;
+            background-color: black;
+        }
+
+        #box>div:nth-child(6) {
+            grid-area: F;
+        }
+
+        #box>div:nth-child(7) {
+            grid-area: G;
+        }
+
+        #box>div:nth-child(8) {
+            grid-area: H;
+        }
+
+        #box>div:nth-child(9) {
+            grid-area: I;
+            color: white;
+            background-color: black;
+        }
+
+        #box>div:nth-child(10) {
+            grid-area: J;
+        }
+
+        #box>div:nth-child(11) {
+            grid-area: K;
+        }
+
+        #box>div:nth-child(12) {
+            grid-area: L;
+        }
+
+        #box>div:nth-child(13) {
+            grid-area: M;
+            color: white;
+            background-color: black;
+        }
+
+        #box>div:nth-child(14) {
+            grid-area: N;
+            color: white;
+            background-color: red;
+        }
+
+        #box>div:nth-child(15) {
+            grid-area: O;
+        }
+
+        #box>div:nth-child(16) {
+            grid-area: P;
+            color: white;
+            background-color: black;
+        }
+
+        #box>div:nth-child(17) {
+            grid-area: Q;
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="box">
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>x</div>
+        <div>C</div>
+        <div>0</div>
+        <div>=</div>
+        <div>/</div>
+    </div>
+</body>
+
+</html>
